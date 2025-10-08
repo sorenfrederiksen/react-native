@@ -12,7 +12,7 @@ import type {RNTesterModuleExample} from '../../types/RNTesterTypes';
 
 import RNTesterText from '../../components/RNTesterText';
 import * as React from 'react';
-import {StyleSheet, View} from 'react-native';
+import {StyleSheet, View, TextInput} from 'react-native';
 
 function Playground() {
   return (
@@ -20,6 +20,7 @@ function Playground() {
       <RNTesterText>
         Edit "RNTesterPlayground.js" to change this file
       </RNTesterText>
+      <TextInput defaultValue="Lots of text to select" selectionColor="white" />
     </View>
   );
 }
